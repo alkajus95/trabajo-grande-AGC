@@ -262,14 +262,8 @@ body.dark-mode footer {
 .image-container:hover .image-overlay {
     opacity: 1; /* Muestra la superposición al pasar el ratón */
 }
-a{
-    text-decoration: underline color(black);
-    color: #333;
-}
-body.dark-mode a{
-    color: #eee;
-    text-decoration: underline color(white);
-}
-header.dark-mode {
-    background-color: #444;
+
+/* Estilos para el formulario de registro */
+#register-section {
+    display: none;
 }

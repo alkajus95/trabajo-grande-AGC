@@ -2,6 +2,10 @@ const loginBtn = document.getElementById('login-btn');
 const loginSection = document.getElementById('login-section');
 const calculatorSection = document.getElementById('calculator-section');
 const gridSection = document.getElementById('grid-section');
+const registerLink = document.getElementById('register-link');
+const registerSection = document.getElementById('register-section');
+const registerBtn = document.getElementById('register-btn');
+const loginLinkRegister = document.getElementById('login-link');
 
 // Credenciales de usuario predefinidas (solo para demostración)
 const usuarios = {
@@ -19,6 +23,32 @@ loginBtn.addEventListener('click', () => {
         gridSection.style.display = 'block';
     } else {
         alert("Usuario o contraseña incorrectos.");
+    }
+});
+
+registerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginSection.style.display = 'none';
+    registerSection.style.display = 'block';
+});
+
+loginLinkRegister.addEventListener('click', (e) => {
+    e.preventDefault();
+    registerSection.style.display = 'none';
+    loginSection.style.display = 'block';
+});
+
+registerBtn.addEventListener('click', () => {
+    const newUsername = document.getElementById('new-username').value;
+    const newPassword = document.getElementById('new-password').value;
+
+    if (newUsername && newPassword) {
+        usuarios[newUsername] = newPassword;
+        alert("Cuenta creada con éxito.");
+        registerSection.style.display = 'none';
+        loginSection.style.display = 'block';
+    } else {
+        alert("Por favor, ingresa usuario y contraseña.");
     }
 });
 
