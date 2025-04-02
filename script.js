@@ -116,5 +116,5 @@ function agregarElemento(contenido) {
 
 // Ejemplo de uso del contenido dinámico
 agregarElemento('¡Hola, mundo!');
-agregarElemento('Este es un ejemplo de contenido dinámico.');
-agregarElemento('Puedes agregar más contenido aquí.');
+agregarElemento('Estos son los proyectos de Alejo 2');
+agregarElemento('un pequeño proyecto para una carrera grande');
