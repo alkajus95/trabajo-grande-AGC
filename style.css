@@ -267,3 +267,11 @@ body.dark-mode footer {
 #register-section {
     display: none;
 }
+a{
+    color: #333;
+    text-decoration: underline ;
+}
+a .dark-mode{
+    color: #eee;
+    text-decoration: underline ;
+}
