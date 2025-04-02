@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Avanzada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+            <button id="dark-mode-toggle">Modo Oscuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="login-section" class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="username" placeholder="Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button id="login-btn">Entrar</button>
+        </div>
+
+        <section id="calculator-section" class="calculator-section" style="display: none;">
+            <h2>Calculadora</h2>
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="calculator-buttons">
+                    <button class="operator" value="+">+</button>
+                    <button class="operator" value="-">-</button>
+                    <button class="operator" value="*">*</button>
+                    <button class="operator" value="/">/</button>
+                    <button class="number" value="7">7</button>
+                    <button class="number" value="8">8</button>
+                    <button class="number" value="9">9</button>
+                    <button class="number" value="4">4</button>
+                    <button class="number" value="5">5</button>
+                    <button class="number" value="6">6</button>
+                    <button class="number" value="1">1</button>
+                    <button class="number" value="2">2</button>
+                    <button class="number" value="3">3</button>
+                    <button class="number" value="0">0</button>
+                    <button class="number" value=".">.</button>
+                    <button class="equal" value="=">=</button>
+                    <button class="clear" value="C">C</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="grid-section" class="grid-section" style="display: none;">
+            <h2>mis proyectos</h2>
+            <a href="https://alkajus95.github.io/prueba-videoframe-alejo-2/">tarea videoframe</a>
+            <a href="https://alkajus95.github.io/clonWIKIPEDIA-de-alejo2/">wikipedia</a>
+            <a href="https://alkajus95.github.io/obleas-AGC/">obleas</a>
+            <a href="https://alkajus95.github.io/cortometraje-AGC/">Chatbot</a>
+            <div class="image-grid">
+                <div class="image-container">
+                    <div class="image-overlay">
+                        <div class="overlay-text">Wikipedia</div>
+                    </div>
+                    <img src="./imagenes/Captura de pantalla 2025-03-31 a la(s) 6.45.05 p.m..png" alt="Captura 1">
+                </div>
+                <div class="image-container">
+                    <div class="image-overlay">
+                        <div class="overlay-text">obleas</div>
+                    </div>
+                    <img src="./imagenes/Captura de pantalla 2025-03-31 a la(s) 6.45.13 p.m..png" alt="Captura 2">
+                </div>
+                <div class="image-container">
+                    <div class="image-overlay">
+                        <div class="overlay-text">video frame</div>
+                    </div>
+                    <img src="./imagenes/Captura de pantalla 2025-03-31 a la(s) 6.45.29 p.m..png" alt="Captura 3">
+                </div>
+                <div class="image-container">
+                    <div class="image-overlay">
+                        <div class="overlay-text">chatbot</div>
+                    </div>
+                    <img src="./imagenes/Captura de pantalla 2025-03-31 a la(s) 6.52.50 p.m..png" alt="captura 4">
+                </div>
+            </div>
+            <div class="grid-container">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
